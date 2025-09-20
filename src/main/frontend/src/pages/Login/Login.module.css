@@ -1,0 +1,96 @@
+.container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(26,35,126,0.10);
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a237e;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center; /* Center children horizontally */
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center label and input */
+  width: 100%;
+}
+
+.label {
+  font-size: 1rem;
+  color: #3949ab;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 250px; /* Set a fixed width for better alignment */
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.7rem 1rem;
+  border: 1px solid #c5cae9;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  transition: border 0.2s;
+  outline: none;
+  background: #f5f7fa;
+}
+
+.input:focus {
+  border: 1.5px solid #3949ab;
+  background: #fff;
+}
+
+.button {
+  background: linear-gradient(90deg, #1a237e 60%, #3949ab 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #3949ab 60%, #1a237e 100%);
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  text-align: center;
+  background: #ffebee;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 1.2rem 0.5rem;
+  }
+  .heading {
+    font-size: 1.2rem;
+  }
+}

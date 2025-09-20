@@ -1,0 +1,80 @@
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(26,35,126,0.07);
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a237e;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.accountList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accountItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(26,35,126,0.07);
+}
+
+.accountId {
+  font-weight: 600;
+  color: #3949ab;
+  margin-right: 1.5rem;
+}
+
+.balance {
+  color: #1a237e;
+  font-weight: 500;
+}
+
+.transferBtn {
+  background: #3949ab;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: not-allowed;
+  opacity: 0.7;
+  transition: background 0.2s;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 1rem;
+  }
+  .accountItem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .transferBtn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}

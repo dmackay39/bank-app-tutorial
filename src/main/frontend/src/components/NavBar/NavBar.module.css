@@ -1,0 +1,101 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #1a237e 60%, #3949ab 100%);
+  padding: 0.75rem 2rem;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-right: 2rem;
+  white-space: nowrap;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.navbar-right {
+  margin-left: auto;
+}
+
+.login-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 0 0.5rem;
+  align-self: center;
+}
+
+.login-title:hover,
+.login-title.active {
+  color: #ffd600;
+}
+
+.navbar-tabs {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar-tabs li {
+  display: flex;
+}
+
+.navbar-tabs li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(26,35,126,0.07);
+  outline: none;
+  border: none;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar-tabs li a:hover,
+.navbar-tabs li a.active {
+  background: #fff;
+  color: #3949ab;
+  box-shadow: 0 2px 8px rgba(26,35,126,0.12);
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.75rem 1rem;
+  }
+  .navbar-title,
+  .login-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar-tabs {
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .navbar-tabs li a {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
